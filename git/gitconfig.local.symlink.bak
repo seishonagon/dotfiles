@@ -1,0 +1,5 @@
+[user]
+        name = seishonagon
+        email = paulatlan@fastmail.fm
+[credential]
+        helper = osxkeychain
