@@ -4,3 +4,9 @@
 [submodule "plugin/zsh-syntax-highlighting"]
 	path = plugin/zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+[submodule "plugins/zsh-apple-touchbar"]
+	path = plugins/zsh-apple-touchbar
+	url = https://github.com/floor114/zsh-apple-touchbar
+[submodule "plugins/z"]
+	path = plugins/z
+	url = https://github.com/rupa/z.git
