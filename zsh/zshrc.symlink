@@ -1,3 +1,6 @@
+# try to profile time
+# (https://blog.askesis.pl/post/2017/04/how-to-debug-zsh-startup-time.html)
+# zmodload zsh/zprof
 # shortcut to this dotfiles path is $DOTFILE
 export DOTFILE=$HOME/.dotfiles
 
@@ -28,13 +31,25 @@ do
   source $file
 done
 
-source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# load antibody
+source $DOTFILE/antibody/zsh_plugins.sh
+
+# load extra plugins syntax highlighting, touchbar and z
+# source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source $DOTFILE/plugins/zsh-apple-touchbar
 . /usr/local/etc/profile.d/z.sh
 
 # initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
+# hack to speed up loading https://carlosbecker.com/posts/speeding-up-zsh/
+# autoload -U compinit
+# compinit
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+	compinit
+else
+	compinit -C
+fi
+# end hack
 
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
@@ -54,3 +69,6 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+# try to lower startup time (see top of file)
+# zprof
