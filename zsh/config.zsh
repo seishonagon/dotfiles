@@ -22,13 +22,22 @@ setopt CORRECT
 setopt COMPLETE_IN_WORD
 setopt IGNORE_EOF
 
+
 setopt APPEND_HISTORY # adds history
 setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
 setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
 setopt HIST_REDUCE_BLANKS
 
+
+# following http://zsh.sourceforge.net/Intro/intro_6.html to have a directory stack
+# as well as the ohmyzh aliases 
+# https://github.com/robbyrussell/oh-my-zsh/blob/master/lib/directories.zsh
+export DIRSTACKSIZE=8
+setopt auto_pushd pushdminus pushdsilent pushdtohome pushd_ignore_dups
+
 # don't expand aliases _before_ completion has finished
 #   like: git comm-[tab]
+# WARNING - this option is commented out because it's incompatible with the z jumping function
 # setopt complete_aliases
 
 bindkey '^[^[[D' backward-word
