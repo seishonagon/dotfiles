@@ -7,6 +7,9 @@ export DOTFILE=$HOME/.dotfiles
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Documents/code/
 
+# new location for antibody plugins
+export ANTIBODY_HOME=~/Library/antibody
+
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
@@ -32,7 +35,13 @@ do
 done
 
 # load antibody
-source $DOTFILE/antibody/zsh_plugins.sh
+# static load, faster but needs to be updated with each new plugin
+# source $DOTFILE/antibody/zsh_plugins.sh
+# dynamic load, while I figure it out
+source <(antibody init)
+# change antibody configuration file
+
+antibody bundle < $DOTFILE/antibody/zsh_plugins.txt
 
 # load extra plugins syntax highlighting, touchbar and z
 # source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

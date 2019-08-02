@@ -1,0 +1,11 @@
+#!/bin/zsh
+#
+# This lets you create and move into a new directgory
+#
+# Type:
+#
+#   md <name>
+#
+
+mkdir -p "$1"
+cd "$1"

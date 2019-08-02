@@ -1,0 +1,3 @@
+#!/bin/sh
+
+pbpaste | pandoc -stdin -f markdown -t rtf | pbcopy;

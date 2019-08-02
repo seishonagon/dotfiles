@@ -9,6 +9,9 @@
         wtf     = !$DOTFILE/bin/git-wtf
         rank-contributors = !$DOTFILE/bin/git-rank-contributors
         count   = !git shortlog -sn
+	unstage = reset HEAD --
+	last = log -1 HEAD
+	visual = !gitk
 [color]
         diff = auto
         status = auto
@@ -16,7 +19,7 @@
         ui = true
 [core]
         excludesfile = ~/.gitignore
-        editor = vim
+	editor = bbedit -w
 [apply]
         whitespace = nowarn
 [mergetool]
@@ -33,3 +36,10 @@
         default = simple
 [credential]
 	helper = osxkeychain
+[diff "word"]
+	textconv = docx2txt
+[diff "exif"]
+	textconv = exiftool
+[diff "excel"]
+	command = exceldiff
+	binary=true

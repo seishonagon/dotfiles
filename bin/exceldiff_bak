@@ -1,0 +1,2 @@
+#!/bin/bash
+excel_cmp "$2" "$5"

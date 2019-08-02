@@ -5,10 +5,10 @@ alias cls='clear' # Good 'ol Clear Screen command
 alias dh='dirs -v'
 
 # oh_my_zsh aliases
-alias -g ...='../..'
-alias -g ....='../../..'
-alias -g .....='../../../..'
-alias -g ......='../../../../..'
+alias -g ...='cd ../..'
+alias -g ....='cd ../../..'
+alias -g .....='cd ../../../..'
+alias -g ......='cd ../../../../..'
 
 alias -- -='cd -'
 alias 1='cd -'
@@ -21,5 +21,5 @@ alias 7='cd -7'
 alias 8='cd -8'
 alias 9='cd -9'
 
-alias md='mkdir -p'
+# alias md='mkdir -p; cd '
 alias rd=rmdir

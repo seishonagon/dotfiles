@@ -10,3 +10,7 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# various pandoc pipes for on the fly conversion of the clipboard
+#
+alias prtf="pbpaste | pandoc -f markdown -t rtf | pbcopy -Prefer rtf; echo 'Converted clipboard to rtf'"
