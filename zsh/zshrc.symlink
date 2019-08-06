@@ -81,3 +81,6 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 # try to lower startup time (see top of file)
 # zprof
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
