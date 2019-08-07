@@ -10,3 +10,6 @@
 [submodule "plugins/z"]
 	path = plugins/z
 	url = https://github.com/rupa/z.git
+[submodule "/Users/paul/.dotfiles/bin/dot"]
+	path = /Users/paul/.dotfiles/bin/dot
+	url = https://github.com/ssh0/dot
