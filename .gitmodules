@@ -13,3 +13,6 @@
 [submodule "/Users/paul/.dotfiles/bin/dot"]
 	path = /Users/paul/.dotfiles/bin/dot
 	url = https://github.com/ssh0/dot
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot

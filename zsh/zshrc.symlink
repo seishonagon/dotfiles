@@ -10,11 +10,6 @@ export PROJECTS=~/Documents/code/
 # new location for antibody plugins
 export ANTIBODY_HOME=~/Library/antibody
 
-# installing the dot .dotfile manager from https://github.com/ssh0/dot/blob/master/README.md
-#
-export DOT_REPO="https://github.com/seishonagon/dotfiles"
-export DOT_DIR="$HOME/.dotfiles"
-source $HOME/.dotfiles/bin/dot/dot.sh
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
