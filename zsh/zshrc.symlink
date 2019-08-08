@@ -10,6 +10,10 @@ export PROJECTS=~/Documents/code/
 # new location for antibody plugins
 export ANTIBODY_HOME=~/Library/antibody
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ddb28f7160ad512f24d562061b1ab0819c7cc971
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
@@ -81,3 +85,9 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 # try to lower startup time (see top of file)
 # zprof
+<<<<<<< HEAD
+=======
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+>>>>>>> ddb28f7160ad512f24d562061b1ab0819c7cc971

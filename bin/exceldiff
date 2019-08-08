@@ -1,0 +1,10 @@
+#!/bin/sh
+## shunt java warnings to /dev/null THIS IS NOT OK, but cleans up output while I find a solution
+exec 2>/dev/null
+java -ea -Xmx512m -cp "/usr/local/Cellar/excel-compare/0.6.1/libexec/*" com.ka.spreadsheet.diff.SpreadSheetDiffer "$@"
+rc=$?
+if [ $rc == 0 -o $rc == 1 ]; then
+    exit 0 ;
+else
+    exit $rc ;
+fi

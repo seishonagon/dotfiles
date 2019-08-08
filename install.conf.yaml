@@ -1,0 +1,24 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.bashrc: bashrc
+    ~/.gitconfig: git/gitconfig.symlink
+    ~/.gitconifg.local: git/gitconfig.local.symlink
+    ~/.gitignore: git/gitignore.symlink
+    ~/.irbrc: ruby/irbrc.symlink
+    ~/.gemrc: ruby/gemrc.symlink
+    ~/.local/share/pandoc/:
+        glob: true
+        path: pandoc/*
+        create: true
+    ~/.vimrc: vim/vimrc.symlink
+    ~/.zshrc: zsh/zshrc.symlink
+
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
+
+
