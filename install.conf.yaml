@@ -15,6 +15,10 @@
         glob: true
         path: pandoc/*
         create: true
+    ~/.config/karabiner:
+        glob: true
+        path: karabiner
+        create: true
     ~/.vimrc: vim/vimrc.symlink
     ~/.zshrc: zsh/zshrc.symlink
 
