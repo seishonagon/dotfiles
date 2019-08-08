@@ -10,6 +10,7 @@ export PROJECTS=~/Documents/code/
 # new location for antibody plugins
 export ANTIBODY_HOME=~/Library/antibody
 
+
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
 # you'll have access to them in your scripts.
