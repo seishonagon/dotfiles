@@ -23,3 +23,4 @@ alias 9='cd -9'
 
 # alias md='mkdir -p; cd '
 alias rd=rmdir
+alias ldot="ls -d .*"
