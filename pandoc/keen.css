@@ -189,30 +189,6 @@ p {
 	margin: 1em 0;
 }
 
-p.keywords {
-background-attachment: scroll;
-background-clip: border-box;
-background-color: rgb(187, 41, 41);
-background-image: none;
-background-origin: padding-box;
-background-size: auto;
-border-bottom-left-radius: 30px;
-border-bottom-right-radius: 30px;
-border-top-left-radius: 30px;
-border-top-right-radius: 30px;
-box-sizing: border-box;
-color: rgb(255, 255, 255);
-display: inline-block;
-font-family: source_sans_prolight_italic;
-font-size: 12px;
-height: 27px;
-line-height: 17px;
-margin-top: 5px;
-padding-bottom: 5px;
-padding-left: 10px;
-padding-right: 10px;
-padding-top: 5px;
-}
 
 img {
 	max-width: 100%;
@@ -233,6 +209,11 @@ h1.title:before {
     content: none;
     counter-increment: none;
 }
+h1.toc-title:before{
+	content: none;
+	counter-increment: none;
+}
+
 h1 {
 	font-size: 2em;
 	font-weight: bold;
@@ -410,17 +391,46 @@ table td {
 }
 
 .author {
-    font-family: 'charterbolditalic'; 
+    font-family: 'source_sans_prolight'; 
 	font-size: 1em;
 	text-align: center;
-	
+	display: inline-block;
 }
 
 .date {
 	font-size: 1em;
 	text-align: center;
-	font-family: 'charterbolditalic'; 
+	font-family: 'source_sans_prolight'; 
+	display: inline-block;
 }
+
+p.keyword {
+	background-attachment: scroll;
+	background-clip: border-box;
+	background-color: rgb(187, 41, 41);
+	background-image: none;
+	background-origin: padding-box;
+	background-size: auto;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+	border-top-left-radius: 30px;
+	border-top-right-radius: 30px;
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	display: inline-block;
+	float: right;
+	font-family: source_sans_prolight_italic;
+	font-size: 14px;
+	height: 27px;
+	line-height: 17px;
+	margin-top: 5px;
+	margin-right: 10px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 2b0px;
+	padding-top: 5px;
+}
+
 
 @media only screen and (min-width: 480px) {
 	body {

@@ -133,8 +133,13 @@ $for(author)$
 $endfor$
 $-------------------------------------------------------------------------> date
 $if(date)$
-<p class="date">$date$</p>
+<p class="date">, le $date$</p>
 $endif$
+$---------------------------------------------------------------------> keywords
+$for(keyword)$
+<p class="keyword">$keyword$</p>
+$endfor$
+
 $----------------------------------------------------------------------> summary
 $if(summary)$
 <div class="summary">
