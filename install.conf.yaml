@@ -19,6 +19,10 @@
         glob: true
         path: karabiner
         create: true
+    ~/.config/wtf:
+        glob: true
+        path: wtf
+        create: true
     ~/.vimrc: vim/vimrc.symlink
     ~/.zshrc: zsh/zshrc.symlink
 
