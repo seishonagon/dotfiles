@@ -5,11 +5,13 @@
 export DOTFILE=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Documents/code/
+export PROJECTS=~/Documents/projects/
 
 # new location for antibody plugins
 export ANTIBODY_HOME=~/Library/antibody
 
+# new location for Go language
+export GOPATH=$HOME/Documents/projects/code/go
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
