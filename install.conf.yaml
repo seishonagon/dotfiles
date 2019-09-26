@@ -19,6 +19,10 @@
         glob: true
         path: karabiner
         create: true
+    ~/.config/yabai:
+        glob: true
+        path: yabai
+        create: true
     ~/.config/wtf:
         glob: true
         path: wtf

@@ -1,60 +1,88 @@
 
 wtf:
   colors:
+#    background: "red"
     border:
       focusable: darkslateblue
       focused: orange
       normal: gray
+    checked: "gray"
+    hightlight:
+      fore: "black"
+      back: "green"
+    text: "white"
+    title: "white"
   grid:
-    columns: [32, 32, 32, 32]
-    rows: [10, 10, 10, 4, 4]
+    columns: [35, 35, 35, 35, 35, 35]
+    rows: [10, 10, 10, 10, 3, 4]
   refreshInterval: 1
+  navigation:
+    shortcuts: true
+  openFileUtil: "open"
+  sigils:
+    checkbox:
+      checked: "x"
+      unchecket: " "
+    paging:
+      normal: "*"
+      selected: "_"
+  term: "xterm-256color"
   mods:
-    clocks_a:
+    prettyweather:
+      enabled: true
+      city: "paris"
+      position:
+        top: 0
+        left: 2
+        height: 1
+        width: 1
+      refreshInterval: 300
+      unit: "m"
+      view: 0
+      language: "en"
+    git:
+      commitCount: 5
+      commitFormat: "[forestgreen]%h [grey]%cd [white]%s [grey]%an[white]"
+      dateFormat: "%H:%M %d %b %y"
+      enabled: true
+      position:
+        top: 0
+        left: 3
+        height: 2
+        width: 2
+      refreshInterval: 8
+      repositories:
+      - "/Users/paul/.dotfiles"
+      - "/Users/paul/Documents/projects/sites/keen-aide"
+    clocks:
       colors:
         rows:
           even: "lightblue"
           odd: "white"
       enabled: true
       locations:
-        Vancouver: "America/Vancouver"
-        Toronto: "America/Toronto"
+        Paris: "Europe/Paris"
+        UK: "Europe/London"
+        Barcelona: "Europe/Madrid"
+        Dubai: "Asia/Dubai"
       position:
         top: 0
-        left: 1
+        left: 0
         height: 1
         width: 1
       refreshInterval: 15
       sort: "alphabetical"
       title: "Clocks A"
       type: "clocks"
-    clocks_b:
-      colors:
-        rows:
-          even: "lightblue"
-          odd: "white"
-      enabled: true
-      locations:
-        Avignon: "Europe/Paris"
-        Barcelona: "Europe/Madrid"
-        Dubai: "Asia/Dubai"
-      position:
-        top: 0
-        left: 2
-        height: 1
-        width: 1
-      refreshInterval: 15
-      sort: "alphabetical"
-      title: "Clocks B"
-      type: "clocks"
     feedreader:
       enabled: true
       feeds:
-      - http://wtfutil.com/blog/index.xml
+      - https://seishonagon.micro.blog/feed.xml
+      - https://micro.blog/feeds/seishonagon.xml
       feedLimit: 10
       position:
-        top: 1
-        left: 1
+        top: 2
+        left: 0
         width: 2
         height: 1
       updateInterval: 14400
@@ -64,38 +92,36 @@ wtf:
         value: "white"
       enabled: true
       position:
-        top: 2
-        left: 1
+        top: 1
+        left: 0
         height: 1
         width: 1
       refreshInterval: 150
     power:
       enabled: true
       position:
-        top: 2
+        top: 1
         left: 2
         height: 1
         width: 1
       refreshInterval: 15
       title: "⚡️"
-    textfile:
+    resources:
+      type: resourceusage
       enabled: true
-      filePath: "~/.config/wtf/config.yml"
-      format: true
       position:
         top: 0
-        left: 0
-        height: 4
+        left: 1
+        height: 2
         width: 1
-      refreshInterval: 30
-      wrapText: false
+      refreshInterval: 1
     uptime:
       args: [""]
       cmd: "uptime"
       enabled: true
       position:
-        top: 3
-        left: 1
+        top: 2
+        left: 2
         height: 1
         width: 2
       refreshInterval: 30
