@@ -11,6 +11,10 @@
     ~/.gitignore: git/gitignore.symlink
     ~/.irbrc: ruby/irbrc.symlink
     ~/.gemrc: ruby/gemrc.symlink
+    ~/.spacemacs.d/:
+        glob: true
+        path: spacemacs.d/*
+        create: true
     ~/.local/share/pandoc/:
         glob: true
         path: pandoc/*
@@ -18,10 +22,6 @@
     ~/.config/karabiner:
         glob: true
         path: karabiner
-        create: true
-    ~/.config/yabai:
-        glob: true
-        path: yabai
         create: true
     ~/.config/wtf:
         glob: true
