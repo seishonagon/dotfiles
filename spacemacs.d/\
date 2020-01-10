@@ -49,9 +49,7 @@ This function should only modify configuration layer settings."
                markdown-italic-underscore t)
      ;; retain t for todo switching in org-mode
      (org :variables
-          org-want-todo-bindings t
-          org-enable-reveal-js-support t
-          )
+          org-want-todo-bindings t)
      html
      ;; autocomplete configuration by default
      ;; is https://github.com/syl20bnr/spacemacs/tree/master/layers/%2bcompletion/auto-completion
@@ -515,10 +513,7 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-  ;; this is my very own mac setup: left option key is the normal accented
-  ;; character modifier
-  ;; right option key is the meta key. It's weird but hopefully it will work
-  ;; because the meta key is not used much in spacemacs
+  
   (setq-default mac-option-modifier 'none)
   (setq-default mac-right-option-modifier 'meta)
   ;; Org-babel setup
@@ -569,9 +564,6 @@ before packages are loaded."
                  (org-defkey org-mode-map "\C-c;" 'undefined)
                  (org-defkey org-mode-map "\C-c\C-x\C-q" 'undefined))
               'append)
-
-    ;; setup of org-reveal package as http://jr0cket.co.uk/2017/03/org-mode-driven-presentations-with-org-reveal-spacemacs.html
-    (setq org-reveal-root  "./reveal/")
     )
 
   ;; Make evil-mode up/down operate in screen lines instead of logical lines

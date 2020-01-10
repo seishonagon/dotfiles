@@ -11,10 +11,10 @@
     ~/.gitignore: git/gitignore.symlink
     ~/.irbrc: ruby/irbrc.symlink
     ~/.gemrc: ruby/gemrc.symlink
-    ~/.spacemacs.d/:
-        glob: true
-        path: spacemacs.d/*
-        create: true
+#    ~/.spacemacs.d/:
+#          glob: true
+#          path: spacemacs.d/*
+#          create: true
     ~/.local/share/pandoc/:
         glob: true
         path: pandoc/*

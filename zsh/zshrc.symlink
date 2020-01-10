@@ -86,4 +86,3 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 # zprof
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
